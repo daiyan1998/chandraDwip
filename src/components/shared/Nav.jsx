@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Nav = () => {
   return (
@@ -7,9 +8,15 @@ const Nav = () => {
       <Image height={50} width={50} src="/logo.png" alt="" />
       <div>
         <ul className="flex gap-10 cursor-pointer font-semibold">
-          <li>Home</li>
-          <li>About US</li>
-          <li>Products & Services</li>
+          <Link href={"/"}>
+            <li>Home</li>
+          </Link>
+          <Link href={"about-us"}>
+            <li>About US</li>
+          </Link>
+          <Link href={"product-services"}>
+            <li>Products & Services</li>
+          </Link>
         </ul>
       </div>
       <Button>Contact Us</Button>
