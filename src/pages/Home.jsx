@@ -1,6 +1,8 @@
 import { Button } from "@/components/ui/button";
 // images
 import Image from "next/image";
+import indentingAgent from "@/assets/certificates/indentingAgent.png";
+// import rope from "@/assets/rope.png";
 // import br from "/home/br.png";
 // import dgf from "/home/dgf.png";
 // import dgdp from "/home/dgdp.png";
@@ -31,6 +33,20 @@ const members = [
 const Home = () => {
   return (
     <>
+      {/* Banner */}
+      <section className="h-[500px] flex justify-center items-center bg-footer-texture">
+        <div className="text-white">
+          <h1 className="text-6xl font-bold ">
+            All kind of jute goods under one roof
+          </h1>
+          <p>
+            Chandradwip Group is a well-established and reputed business house
+            in the country.
+          </p>
+          <Button>Learn More</Button>
+        </div>
+      </section>
+
       {/* About */}
       <section className="container mx-auto flex items-center gap-6 mb-12">
         <div className="basis-3/5">
@@ -145,6 +161,13 @@ const Home = () => {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* certificates */}
+      <section>
+        <div className="flex">
+          <Image src={indentingAgent} height={200} width={200} />
         </div>
       </section>
     </>
