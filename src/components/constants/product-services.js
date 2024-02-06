@@ -1,3 +1,6 @@
+// import Image from "next/image";
+// import parboiled_rice from "@@/public/product-services/commodities/flour.png"
+
 const productService = [
   {
     id: 1,
@@ -5,42 +8,42 @@ const productService = [
     services: [
       {
         id: 1,
-        imgFile: '/public/product-services/jute-bags/jute-sack-01.png',
+        imgFile: '/src/assets/rope.png',
         title: 'Parboiled Rice',
       },
       {
         id: 2,
-        imgFile: '/public/product-services/jute-bags/jute-sack-01.png',
+        imgFile: '../../../public/product-services/commodities/lentil.png',
         title: 'Lentil',
       },
       {
         id: 3,
-        imgFile: '/public/product-services/jute-bags/jute-sack-01.png',
+        imgFile: '../../../public/product-services/commodities/flour.png',
         title: 'Flour',
       },
       {
         id: 4,
-        imgFile: '/public/product-services/jute-bags/jute-sack-01.png',
+        imgFile: '../../../public/product-services/commodities/soybean-oil.png',
         title: 'Soybean oil',
       },
       {
         id: 5,
-        imgFile: '/public/product-services/jute-bags/jute-sack-01.png',
+        imgFile: '../../../public/product-services/commodities/soybean-oil.png',
         title: 'Potato',
       },
       {
         id: 6,
-        imgFile: '/public/product-services/jute-bags/jute-sack-01.png',
+        imgFile: '../../../public/product-services/commodities/wheat.png',
         title: 'Wheat',
       },
       {
         id: 7,
-        imgFile: '/public/product-services/jute-bags/jute-sack-01.png',
+        imgFile: '../../../public/product-services/commodities/sugar.png',
         title: 'Sugar',
       },
       {
         id: 8,
-        imgFile: '/public/product-services/jute-bags/jute-sack-01.png',
+        imgFile: '../../../public/product-services/commodities/chickpea.png',
         title: 'Chickpea',
       },
     ]
