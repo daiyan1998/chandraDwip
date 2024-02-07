@@ -1,13 +1,11 @@
 import productService from "@/components/constants/product-services";
 import Image from "next/image";
-import imgFile from "../../assets/product-services/commodities/soybean-oil.png"
 
 export default function page() {
   const products = productService;
-  // console.log(products.services);
+  // console.log(products);
   return (
     <main className="max-w-[1180px] mx-auto">
-      {/* <h1 className="py-20 text-center border">Products & Services</h1> */}
 
       <div className="my-20">
         {products.map((product) => (
@@ -17,13 +15,13 @@ export default function page() {
               {product.services.map((service) => (
                 <div key={service.id}>
                   <Image
-                    src={imgFile}
-                    // src={service.imgFile}
-                    // placeholder="blur
-                    width={270}
-                    height={330}
+                    src={service.src}
+                    placeholder="blur"
+                    // width={270}
+                    // height={330}
                     quality={100}
-                    alt="Raw jute"
+                    className="rounded-xl shadow-lg hover:scale-105 duration-500"
+                    alt={service.title}
                   />
                   <p className="text-dark text-center text-base md:text-lg font-medium my-4">{service.title}</p>
                 </div>
