@@ -23,6 +23,7 @@ const Nav = () => {
     //     <Button>Contact Us</Button>
     //   </div>
     // </nav>
+
     <nav className="fixed w-full bg-white z-10 shadow-md">
       <div className="container mx-auto">
         <div className="flex justify-between items-center py-4">
@@ -42,7 +43,7 @@ const Nav = () => {
               </Link>
             </ul>
           </div>
-          <Button>Contact Us</Button>
+    <Link  href={"contact-us"}>     <Button>Contact Us</Button></Link> 
         </div>
       </div>
       <div className="md:hidden">
