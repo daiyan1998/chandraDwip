@@ -1,5 +1,7 @@
 const page = () => {
-  return <div>contact us</div>;
+  return <div>
+    
+  </div>;
 };
 
 export default page;
