@@ -35,7 +35,7 @@ const members = [
 
 const Home = () => {
   return (
-    <>
+    <div className="">
       {/* Banner */}
       <section className="h-[60vh] flex justify-center items-center bg-footer-texture bg-cover">
         <div className="text-white flex flex-col gap-6 text-center md:w-[40%]">
@@ -47,6 +47,34 @@ const Home = () => {
             in the country.
           </p>
           <Button className="mx-auto">Learn More</Button>
+        </div>
+      </section>
+
+      {/* clients */}
+      <section className="py-10 container mx-auto">
+        <div className="px-8 ">
+          <h2 className="text-4xl font-bold text-center mb-9">Clients</h2>
+          <Carousel className="w-">
+            <CarouselContent className="-ml-1">
+              {Array.from({ length: 10 }).map((_, index) => (
+                <CarouselItem
+                  key={index}
+                  className=" md:basis-1/5 sm:basis-1/3 basis-full"
+                >
+                  <div className="p-1">
+                    <Image
+                      className="mx-auto"
+                      src="/clients/dfg.png"
+                      height={100}
+                      width={100}
+                    />
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <CarouselPrevious />
+            <CarouselNext />
+          </Carousel>
         </div>
       </section>
 
@@ -116,32 +144,6 @@ const Home = () => {
         </div>
       </section>
 
-      {/* clients */}
-      <section className="py-10">
-        <h2 className="text-4xl font-bold text-center mb-9">Clients</h2>
-        <Carousel className="container mx-auto">
-          <CarouselContent className="-ml-1">
-            {Array.from({ length: 5 }).map((_, index) => (
-              <CarouselItem
-                key={index}
-                className="pl-1 md:basis-1/5 lg:basis-1/5"
-              >
-                <div className="p-1">
-                  <Image
-                    className="mx-auto"
-                    src="/clients/dfg.png"
-                    height={100}
-                    width={100}
-                  />
-                </div>
-              </CarouselItem>
-            ))}
-          </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
-        </Carousel>
-      </section>
-
       {/* members */}
       <section className="bg-green-600 py-20">
         <div className="container mx-auto md:flex items-center">
@@ -191,7 +193,7 @@ const Home = () => {
         </div>
       </section>
       {/*  */}
-    </>
+    </div>
   );
 };
 
