@@ -95,51 +95,21 @@ const Home = () => {
           </p>
           <Button>About Us</Button>
         </div>
-        <div className="md:basis-2/5 md:grid md:grid-cols-2 gap-4 relative">
-          <div className="relative md:h-[150px]">
-            <Image
-              className=""
-              src="/home/wheat.png"
-              sizes="(min-width: 808px) 50vw, 100vw"
-              fill
-              alt="about"
-            />
+        <div className="md:basis-2/5 grid md:grid-cols-2 gap-4 relative w-full">
+          <div className="relative h-[150px]">
+            <Image src="/home/wheat.png" fill alt="about" />
           </div>
           <div className="relative h-[150px]">
-            <Image
-              className=""
-              src="/home/oil.png"
-              sizes="(min-width: 808px) 50vw, 100vw"
-              fill
-              alt="about"
-            />
+            <Image src="/home/oil.png" fill alt="about" />
           </div>
           <div className="relative h-[150px]">
-            <Image
-              className=""
-              src="/home/car.png"
-              sizes="(min-width: 808px) 50vw, 100vw"
-              fill
-              alt="about"
-            />
+            <Image src="/home/car.png" fill alt="about" />
           </div>
           <div className="relative h-[150px]">
-            <Image
-              className=""
-              src="/home/lentils.png"
-              sizes="(min-width: 808px) 50vw, 100vw"
-              fill
-              alt="about"
-            />
+            <Image src="/home/lentils.png" fill alt="about" />
           </div>
-          <div className="relative col-span-2 h-[150px]">
-            <Image
-              className="object-contain"
-              src="/home/fireBus.png"
-              sizes="(min-width: 808px) 50vw, 100vw"
-              fill
-              alt="about"
-            />
+          <div className="relative col-span-2 h-[150px] object-contain">
+            <Image src="/home/fireBus.png" fill alt="about" />
           </div>
         </div>
       </section>

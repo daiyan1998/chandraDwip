@@ -5,6 +5,12 @@ import Link from "next/link";
 import { useState } from "react";
 import { Separator } from "../ui/separator";
 
+const listItems = [
+  { href: "/", label: "Home" },
+  { href: "/about-us", label: "About Us" },
+  { href: "/product-services", label: "Products & Services" },
+];
+
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
   const navHandler = () => {
@@ -18,15 +24,11 @@ const Nav = () => {
         <Image height={50} width={50} src="/logo.png" alt="" />
         <div className="hidden md:block">
           <ul className="flex gap-10 cursor-pointer font-semibold ">
-            <Link href={"/"}>
-              <li>Home</li>
-            </Link>
-            <Link href={"about-us"}>
-              <li>About US</li>
-            </Link>
-            <Link href={"product-services"}>
-              <li>Products & Services</li>
-            </Link>
+            {listItems.map((item) => (
+              <li key={item.href}>
+                <Link href={item.href}>{item.label}</Link>
+              </li>
+            ))}
           </ul>
         </div>
 
@@ -45,18 +47,14 @@ const Nav = () => {
           } transition ease-linear delay-75`}
         >
           <ul className="flex flex-col gap-5 cursor-pointer font-semibold px-4 pt-10 bg-white h-full">
-            <Link href={"/"}>
-              <li>Home</li>
-            </Link>
-            <Separator />
-            <Link href={"about-us"}>
-              <li>About US</li>
-            </Link>
-            <Separator />
-            <Link href={"product-services"}>
-              <li>Products & Services</li>
-            </Link>
-            <Separator />
+            {listItems.map((item) => (
+              <>
+                <li onClick={navHandler} key={item.href}>
+                  <Link href={item.href}>{item.label}</Link>
+                </li>
+                <Separator />
+              </>
+            ))}
             <Button>Contact Us</Button>
           </ul>
           <Image
