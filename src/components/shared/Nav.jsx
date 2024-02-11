@@ -19,7 +19,7 @@ const Nav = () => {
   };
 
   return (
-    <nav className="fixed w-full bg-white z-10 shadow-md">
+    <nav className="sticky top-0 w-full bg-white z-10 shadow-md">
       <div className="flex container mx-auto justify-between items-center py-4">
         <Image height={50} width={50} src="/logo.png" alt="" />
         <div className="hidden md:block">
