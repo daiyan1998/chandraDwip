@@ -13,7 +13,7 @@ const listItems = [
 
 const Nav = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const navHandler = () => {
+  const closeMenu = () => {
     setIsOpen(!isOpen);
     console.log("clicked");
   };
@@ -35,21 +35,21 @@ const Nav = () => {
         <Button className="hidden md:block">Contact Us</Button>
         {/* mobile menu */}
         <Image
-          onClick={navHandler}
+          onClick={closeMenu}
           className="block md:hidden"
           src="/icon/menu.png"
           height={30}
           width={30}
         />
         <div
-          className={`absolute top-0 right-0 bottom-0 sm:w-[40%]  w-[60%]  h-svh ${
-            isOpen ? "translate-x-0" : "translate-x-full"
-          } transition ease-linear delay-75`}
+          className={`absolute top-0 right-0 bottom-0 sm:w-[40%] w-[60%]  h-svh ${
+            isOpen ? "" : "scale-x-0"
+          } transition-all origin-right ease-linear delay-75`}
         >
           <ul className="flex flex-col gap-5 cursor-pointer font-semibold px-4 pt-10 bg-white h-full">
             {listItems.map((item) => (
               <>
-                <li onClick={navHandler} key={item.href}>
+                <li onClick={closeMenu} key={item.href}>
                   <Link href={item.href}>{item.label}</Link>
                 </li>
                 <Separator />
@@ -60,7 +60,7 @@ const Nav = () => {
           <Image
             className="absolute top-1 right-1"
             src="/icon/close.svg"
-            onClick={navHandler}
+            onClick={closeMenu}
             height={30}
             width={30}
           />
