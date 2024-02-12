@@ -51,3 +51,9 @@
 
 @layer base {
 }
+
+/* @layer utilities {
+  .banner {
+    @apply bg-[url('../')]
+  }
+} */

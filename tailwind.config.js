@@ -55,6 +55,11 @@ module.exports = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+
+        // Products & Service Section Color
+        dark: '#1A1A1A',
+        orange: '#E46F25',
+
       },
       borderRadius: {
         lg: "var(--radius)",
