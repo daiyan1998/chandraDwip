@@ -5,7 +5,7 @@ import ProfileCard from "@/components/profileCard/ProfileCard";
 
 const page = () => {
   return <div>
-    <div className="max-w-7xl  border-2 mx-auto space-y-10">
+    <div className="max-w-7xl  mx-auto space-y-10">
       <ProfileCard profileObject={ceo}></ProfileCard>
     <ReverseProfile profileObject={director}> </ReverseProfile>
     <ProfileCard profileObject={dristy}></ProfileCard>

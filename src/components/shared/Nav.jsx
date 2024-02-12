@@ -9,6 +9,7 @@ const listItems = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About Us" },
   { href: "/product-services", label: "Products & Services" },
+  
 ];
 
 const Nav = () => {
@@ -32,7 +33,8 @@ const Nav = () => {
           </ul>
         </div>
 
-        <Button className="hidden md:block">Contact Us</Button>
+<Link href={'/contact-us'}>        <Button className="hidden md:block">Contact Us</Button>
+</Link>
         {/* mobile menu */}
         <Image
           onClick={closeMenu}

@@ -1,27 +1,27 @@
 import Image from "next/image";
 
-const strength = [
+const strengths = [
     "Extensive entrepreneurial experience",
-    "Chandradwip International",
-    "Farisa Trade Center",
-    "Renu Construction",
-    "Dristi Traders",
-    "Arian Construction And Supplier",
+    "Efficient and quality services",
+    "Vast network in national andinternational business arena",
+    "Experienced and committed work force",
+    "Enriched understanding of local market andstronger relationship with clients",
+    "Competence in customer relationshipmanagement",
     
   ];
 
 
 const DynamicSection = () => {
     return (
-        <section className="bg-green-600 py-20">
-        <div className="flex justify-between items-center">
-          <div className="basis-1/3">
-            <h2 className="text-4xl font-bold mb-6 text-center text-white">
+        <section className="bg-green-600 py-20 ">
+        <div className="flex justify-between items-center px-10">
+          <div className="basis-1/3 ">
+            <h2 className="text-5xl font-bold mb-6 text-center text-white">
             Strength of <br /> Chandradwip <br /> Construction
             </h2>
           </div>
-          <div className="basis-2/3 grid grid-cols-3 gap-6">
-            {strength.map((member) => (
+          <div className="basis-2/3 grid grid-cols-3 gap-10">
+            {strengths.map((strength) => (
               <div className="flex flex-col justify-center gap-3 bg-green-700 rounded-md p-4">
                 <Image
                   src="/homeIcon.png"
