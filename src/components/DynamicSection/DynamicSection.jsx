@@ -14,15 +14,15 @@ const strengths = [
 const DynamicSection = () => {
     return (
         <section className="bg-green-600 py-20 ">
-        <div className="flex justify-between items-center px-10">
+        <div className="flex justify-between items-center ">
           <div className="basis-1/3 ">
             <h2 className="text-5xl font-bold mb-6 text-center text-white">
             Strength of <br /> Chandradwip <br /> Construction
             </h2>
           </div>
-          <div className="basis-2/3 grid grid-cols-3 gap-10">
+          <div className="basis-2/3 grid grid-cols-3 gap-5 ">
             {strengths.map((strength) => (
-              <div className="flex flex-col justify-center gap-3 bg-green-700 rounded-md p-4">
+              <div className="flex flex-col justify-center mt-2 w-60 bg-green-700 rounded-md p-4">
                 <Image
                   src="/homeIcon.png"
                   height={50}
