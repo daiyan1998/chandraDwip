@@ -19,7 +19,7 @@ const ProfileCard = ({profileObject}) => {
                 <h1 className="text-[#e46f25] font-extrabold text-xl lg:text-2xl">{name}</h1>
                 <h3><span className="text-base lg:text-xl font-bold">{DesignationBold}</span> <span className="text-sm font-medium">{Designation}</span></h3>
                 <h3><span className="font-bold text-base lg:text-xl">{PostBold}</span ><span className=" text-sm font-medium"> {Post}</span></h3>
-                <p className=" pr-4 text-sm lg:text-base  font-medium text-left">{Description}</p>
+                <p className=" pr-10 text-sm lg:text-base  font-medium text-left ">{Description}</p>
                 
             </div>
             

@@ -4,7 +4,7 @@ import Image from "next/image";
     const {image,name ,DesignationBold ,Designation ,PostBold ,Post ,Description} = profileObject;
 
     return (
-        <div className="w-full  lg:flex gap-5  pt-5 my-5 justify-center items-center">
+        <div className="w-full  flex  flex-col-reverse lg:flex-row   pt-5 my-5 justify-between items-center">
             
             <div className="lg:w-1/2 w-3/4 mx-auto space-y-3 text-left mb-10">
                 <h1 className="text-[#e46f25] font-extrabold text-xl lg:text-2xl">{name}</h1>
@@ -13,14 +13,14 @@ import Image from "next/image";
                 <p className="pr-4 text-sm lg:text-base  font-medium text-left">{Description}</p>
                 
             </div>
-            <div className="lg:w-1/2 right-0">
-                <div className="lg:w-1/2 w-3/4 mx-auto ">
+            <div className="lg:w-1/2 w-3/4  mb-10 ">
                     <Image
+                    className="lg:ml-20  "
                 src={image}
                 alt="profile image"
                 width={500}
                 height={500}
-                ></Image></div>
+                ></Image>
 
             </div>       
             
