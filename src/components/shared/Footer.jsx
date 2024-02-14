@@ -6,7 +6,13 @@ const Footer = () => {
     <footer className="bg-black text-white py-20">
       <section className="container grid md:grid-cols-3 gap-9">
         <div>
-          <Image src="/logo.png" width={100} height={100} className="mb-6" />
+          <Image
+            src="/logo.png"
+            width={100}
+            height={100}
+            alt="logo"
+            className="mb-6"
+          />
           <p className="text-gray-400">
             We are always exploring and studying International & National
             market/business methodically to meet the high standard of our valued

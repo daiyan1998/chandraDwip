@@ -65,6 +65,7 @@ const Home = () => {
                     <Image
                       className="mx-auto"
                       src="/clients/dfg.png"
+                      alt=""
                       height={100}
                       width={100}
                     />
@@ -124,7 +125,10 @@ const Home = () => {
           </div>
           <div className="basis-2/3 grid md:grid-cols-4 grid-cols-2 gap-4">
             {members.map((member) => (
-              <div className="flex flex-col justify-center gap-3 bg-green-700 rounded-md p-4">
+              <div
+                key={member}
+                className="flex flex-col justify-center gap-3 bg-green-700 rounded-md p-4"
+              >
                 <Image
                   src="/homeIcon.png"
                   height={50}
@@ -143,9 +147,9 @@ const Home = () => {
       <section className="py-20">
         <h2 className="text-4xl font-bold mb-6  text-center">Certificate</h2>
         <div className="flex flex-wrap justify-center md:gap-10">
-          <Image src={indentingAgent} height={400} width={400} />
-          <Image src={commerece} height={400} width={400} />
-          <Image src={juteGoods} height={400} width={400} />
+          <Image src={indentingAgent} height={400} width={400} alt="" />
+          <Image src={commerece} height={400} width={400} alt="" />
+          <Image src={juteGoods} height={400} width={400} alt="" />
         </div>
       </section>
 
@@ -157,6 +161,7 @@ const Home = () => {
             src={contactImg}
             height={500}
             width={500}
+            alt=""
             className="md:block hidden"
           />
           <Form />
