@@ -5,8 +5,8 @@ const ProfileCard = ({profileObject}) => {
     const {image,name ,DesignationBold ,Designation ,PostBold ,Post ,Description} = profileObject;
     console.log(image);
     return (
-        <div className="flex gap-5 pt-5 my-5 justify-center items-center ">
-            <div className="w-1/2">
+        <div className="lg:flex gap-5 pt-5 my-5 justify-center items-center ">
+            <div className="lg:w-1/2 w-3/4 mx-auto mb-10">
                 <Image
                 src={image}
                 alt="profile image"
@@ -15,11 +15,11 @@ const ProfileCard = ({profileObject}) => {
                 ></Image>
 
             </div>
-            <div className="w-1/2 space-y-3 text-left">
-                <h1 className="text-[#e46f25] font-extrabold text-2xl">{name}</h1>
-                <h3><span className="font-bold">{DesignationBold}</span> <span>{Designation}</span></h3>
-                <h3><span className="font-bold text-sm">{PostBold}</span> {Post}</h3>
-                <p className=" pr-4 text-left">{Description}</p>
+            <div className="lg:w-1/2 space-y-3 text-left w-3/4 mx-auto">
+                <h1 className="text-[#e46f25] font-extrabold text-xl lg:text-2xl">{name}</h1>
+                <h3><span className="text-base lg:text-xl font-bold">{DesignationBold}</span> <span className="text-sm font-medium">{Designation}</span></h3>
+                <h3><span className="font-bold text-base lg:text-xl">{PostBold}</span ><span className=" text-sm font-medium"> {Post}</span></h3>
+                <p className=" pr-10 text-sm lg:text-base  font-medium text-left ">{Description}</p>
                 
             </div>
             
