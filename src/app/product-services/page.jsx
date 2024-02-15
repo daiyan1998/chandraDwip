@@ -1,29 +1,39 @@
-import productService from "@/components/constants/product-services";
+import productsAndServices from "@/components/constants/product-services";
+import DynamicBtn from "@/components/ui/DynamicBtn";
 import Image from "next/image";
+import Link from "next/link";
+
 
 export default function page() {
-  const products = productService;
+  const products = productsAndServices;
   // console.log(products);
   return (
     <main className="max-w-[1180px] mx-auto">
-
+      {/* ---------- Dynamic Banner Section Start---------- */}
+      {/* ---------- Dynamic Banner Section End---------- */}
       <div className="my-20">
         {products.map((product) => (
-          <div className="" key={product.id}>
-            <h2 className="text-4xl font-bold text-orange text-center my-10">{product.title}</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center">
+          <div key={product.id}>
+            <h2 className="categories-h2">{product.category}</h2>
+            <div className="products-grid">
               {product.services.map((service) => (
                 <div key={service.id}>
-                  <Image
-                    src={service.src}
-                    placeholder="blur"
-                    // width={270}
-                    // height={330}
-                    quality={100}
-                    className="rounded-xl shadow-lg hover:scale-105 duration-500"
-                    alt={service.title}
-                  />
-                  <p className="text-dark text-center text-base md:text-lg font-medium my-4">{service.title}</p>
+                  <div className="card">
+                    <Image
+                      src={service.src}
+                      placeholder="blur"
+                      quality={100}
+                      alt={service.title}
+                      // className="rounded-xl shadow-lg hover:scale-105 duration-500"
+                      className="object-cover rounded-2xl"
+                    />
+                    <div className="card-body">
+                      <h1 className="uppercase font-semibold text-xl">{service.title}</h1>
+                      <p className="text-sm normal-case my-4">{service.description}</p>
+                      <Link href='/contact-us'><DynamicBtn btnClass='w-full'>Contact Us</DynamicBtn></Link>
+                    </div>
+                  </div>
+                  <p className="card-title">{service.title}</p>
                 </div>
               ))}
             </div>

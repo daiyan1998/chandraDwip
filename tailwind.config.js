@@ -59,6 +59,7 @@ module.exports = {
         // Products & Service Section Color
         dark: '#1A1A1A',
         orange: '#E46F25',
+        green: '#16A34A'
 
       },
       borderRadius: {

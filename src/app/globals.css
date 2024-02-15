@@ -52,8 +52,33 @@
 @layer base {
 }
 
-/* @layer utilities {
-  .banner {
-    @apply bg-[url('../')]
+
+/* ------------------------------- Products & Services Section Start ------------------------------- */
+@layer utilities {
+  .categories-h2 {
+    @apply text-4xl font-bold text-orange text-center capitalize my-10;
   }
-} */
+
+  .products-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 justify-items-center;
+  }
+
+  .card {
+    @apply overflow-hidden relative shadow-md rounded-2xl;
+  }
+
+  .card-body {
+    @apply w-full h-full top-full right-0 absolute text-white bg-green/50 backdrop-blur-xl rounded-2xl flex flex-col justify-center p-5 duration-1000 ;
+  }
+
+  .card-title {
+    @apply text-dark text-center text-base md:text-lg font-semibold capitalize my-4;
+  }
+}
+
+@layer components {
+  .card:hover .card-body{
+    top: 0;
+  }
+}
+/* ------------------------------- Products & Services Section End ------------------------------- */

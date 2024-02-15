@@ -17,8 +17,8 @@ import Image from "next/image";
                 <div className="flex justify-end"><Image
                 src={image}
                 alt="profile image"
-                width={500}
-                height={500}
+                // width={500}
+                // height={500}
                 ></Image></div>
 
             </div>       
