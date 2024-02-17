@@ -1,9 +1,10 @@
-import { Inter } from "next/font/google";
+import { Metrophobic, Manrope } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/shared/Nav";
 import Footer from "@/components/shared/Footer";
 
-const inter = Inter({ subsets: ["latin"] });
+const metrophobic = Metrophobic({ subsets: ["latin"], weight: '400', variable: '--font-metrophobic' });
+const manrope = Manrope({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Create Next App",
@@ -13,7 +14,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={`${manrope.className} ${metrophobic.variable}`}>
         <Nav />
         {children}
         <Footer />

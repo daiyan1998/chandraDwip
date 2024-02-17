@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-metrophobic);
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -52,6 +56,28 @@
 @layer base {
 }
 
+
+
+
+/* ------------------------------- Banner Section Start ------------------------------- */
+@layer utilities {
+  .banner {
+    @apply text-white flex flex-col gap-4 md:gap-6 text-center pt-10 md:pt-16 pb-20 md:pb-24 mx-[5%] md:mx-[7.5%] lg:mx-[10%];
+  }
+
+  .banner-title {
+    @apply max-w-3xl mx-auto text-3xl sm:text-4xl md:text-6xl font-bold;
+  }
+
+  .banner-description {
+    @apply max-w-xl mx-auto mb-5 text-base md:text-lg lg:text-2xl px-10 md:px-0;
+  }
+
+  .banner-route {
+    @apply max-w-xl mx-auto mb-5 text-base md:text-lg px-10 md:px-0;
+  }
+}
+/* ------------------------------- Banner Section End ------------------------------- */
 
 /* ------------------------------- Products & Services Section Start ------------------------------- */
 @layer utilities {

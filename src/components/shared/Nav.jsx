@@ -8,7 +8,7 @@ import { Separator } from "../ui/separator";
 const listItems = [
   { href: "/", label: "Home" },
   { href: "/about-us", label: "About Us" },
-  { href: "/product-services", label: "Products & Services" },
+  { href: "/products-and-services", label: "Products & Services" },
   
 ];
 

@@ -20,6 +20,7 @@ module.exports = {
       backgroundImage: {
         "hero-pattern": "url('/src/assets/rope.png')",
         "footer-texture": "url('/rope.png')",
+        "banner-img": "url('/banner.png')",
       },
       colors: {
         border: "hsl(var(--border))",
