@@ -77,354 +77,410 @@ import shopping_bag_03 from "/public/product-services/jute-shopping-bags/shoppin
 import shopping_bag_04 from "/public/product-services/jute-shopping-bags/shopping-bag-04.png";
 
 
-const productService = [
+const productsAndServices = [
   {
     id: 1,
-    title: 'Commodities',
+    category: 'Commodities',
     services: [
       {
         id: 1,
         src: parboiled_rice,
         title: 'Parboiled Rice',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: lentil,
         title: 'Lentil',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: flour,
         title: 'Flour',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: soybean_oil,
         title: 'Soybean oil',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 5,
         src: potato,
         title: 'Potato',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 6,
         src: wheat,
         title: 'Wheat',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 7,
         src: sugar,
         title: 'Sugar',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 8,
         src: chickpea,
         title: 'Chickpea',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
   {
     id: 2,
-    title: 'Stone',
+    category: 'Stone',
     services: [
       {
         id: 1,
         src: stone,
         title: 'Stone',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: stone_chips,
         title: 'Stone Chips',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: coloring_stone,
         title: 'Coloring Stone',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: clinker,
         title: 'Clinker',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
   {
     id: 3,
-    title: 'Industrial Chemical Equipment & Machineries',
+    category: 'Industrial Chemical Equipment & Machineries',
     services: [
       {
         id: 1,
         src: machineries,
         title: 'Machineries',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: chemical_equipment,
         title: 'Chemical Equipment',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: machineries02,
         title: 'Machineries',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: chemical_equipment02,
         title: 'Chemical Equipment',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
   {
     id: 4,
-    title: 'Special Vehicles',
+    category: 'Special Vehicles',
     services: [
       {
         id: 1,
         src: apc,
         title: 'APC',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: ccv,
         title: 'ccv',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: wrecker,
         title: 'Wrecker',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: fire_truck,
         title: 'Fire Truck',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 5,
         src: fuel_tanker,
         title: 'Fuel Tanker',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 6,
         src: bulldozer,
         title: 'Bulldozer',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 7,
         src: water_tanker,
         title: 'Water Tanker',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 8,
         src: bulldozer02,
         title: 'Bulldozer',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
   {
     id: 5,
-    title: 'Non-Lethal Ammunition',
+    category: 'Non-Lethal Ammunition',
     services: [
       {
         id: 1,
         src: ammo_01,
         title: 'Ammunition',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: ammo_02,
         title: 'Ammunition',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: ammo_03,
         title: 'Ammunition',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: ammo_04,
         title: 'Ammunition',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
   {
     id: 6,
-    title: 'Small Arms Ammunition',
+    category: 'Small Arms Ammunition',
     services: [
       {
         id: 1,
         src: ammo_s1,
         title: 'Ammunition',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: ammo_s2,
         title: 'Ammunition',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: ammo_s3,
         title: 'Ammunition',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: ammo_s4,
         title: 'Ammunition',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
   {
     id: 7,
-    title: 'Body Armor Equipment',
+    category: 'Body Armor Equipment',
     services: [
       {
         id: 1,
         src: bag,
         title: 'Bag',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: helmet,
         title: 'Helmet',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: bulletproof_vest01,
         title: 'Bulletproof Vest',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: gas_mask,
         title: 'Gas Mask',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 5,
         src: bulletproof_vest02,
         title: 'Bulletproof Vest',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 6,
         src: bomb_suit,
         title: 'Bomb Suit',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 7,
         src: leg_protector,
         title: 'Leg Protector',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 8,
         src: tactical_belt,
         title: 'Tactical Belt',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
   {
     id: 8,
-    title: 'Government Construction Work',
+    category: 'Government Construction Work',
     services: [
       {
         id: 1,
         src: constr_work_01,
         title: 'Construction Work',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: constr_work_02,
         title: 'Construction Work',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: constr_work_03,
         title: 'Construction Work',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: constr_work_04,
         title: 'Construction Work',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
 
   {
     id: 9,
-    title: 'Raw Jute & Jute Yarn',
+    category: 'Raw Jute & Jute Yarn',
     services: [
       {
         id: 1,
         src: raw_jute,
         title: 'Raw Jute',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: jute_yarn_01,
         title: 'Jute Yarn',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: jute_yarn_02,
         title: 'Jute Yarn',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: jute_yarn_03,
         title: 'Jute Yarn',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
   {
     id: 10,
-    title: 'Jute Gunnies Bags',
+    category: 'Jute Gunnies Bags',
     services: [
       {
         id: 1,
         src: jute_sack_01,
         title: 'Jute Sack Bag',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: jute_sack_02,
         title: 'Jute Sack Bag',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: jute_sack_03,
         title: 'Jute Sack Bag',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: jute_sack_04,
         title: 'Jute Sack Bag',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
   {
     id: 11,
-    title: 'Jute Shopping Bags',
+    category: 'Jute Shopping Bags',
     services: [
       {
         id: 1,
         src: shopping_bag_01,
         title: 'Shopping Bag',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 2,
         src: shopping_bag_02,
         title: 'Shopping Bag',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 3,
         src: shopping_bag_03,
         title: 'Shopping Bag',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
       {
         id: 4,
         src: shopping_bag_04,
         title: 'Shopping Bag',
+        description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, harum. Rerum, numquam. Accusantium.',
       },
     ]
   },
 ];
 
-export default productService;
+export default productsAndServices;
