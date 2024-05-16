@@ -5,13 +5,6 @@ import indentingAgent from "@/assets/certificates/indentingAgent.png";
 import commerece from "@/assets/certificates/commerece&industry.png";
 import juteGoods from "@/assets/certificates/juteGoods.png";
 import contactImg from "@/assets/contactUs.png";
-// import rope from "@/assets/rope.png";
-// import br from "/home/br.png";
-// import dgf from "/home/dgf.png";
-// import dgdp from "/home/dgdp.png";
-// import hed from "/home/hed.png";
-// import nsc from "/home/nsc.png";
-// import tcb from "/home/tcb.png";
 // shadcn
 import {
   Carousel,
@@ -21,6 +14,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Form from "@/components/shared/Form";
+import Banner from "@/components/shared/Banner";
 
 const members = [
   "Chandradwip Construction",
@@ -116,8 +110,8 @@ const Home = () => {
       </section>
 
       {/* members */}
-      <section className="bg-green-600 py-20">
-        <div className="container mx-auto md:flex items-center">
+      <section className="bg-green py-20">
+        <div className="container mx-auto md:flex items-center gap-10">
           <div className="basis-1/3">
             <h2 className="text-4xl font-bold mb-6 text-white">
               Members Of Chandradwip Group
@@ -127,7 +121,7 @@ const Home = () => {
             {members.map((member) => (
               <div
                 key={member}
-                className="flex flex-col justify-center gap-3 bg-green-700 rounded-md p-4"
+                className="flex flex-col justify-center gap-3 bg-dark_green rounded-md p-4"
               >
                 <Image
                   src="/homeIcon.png"

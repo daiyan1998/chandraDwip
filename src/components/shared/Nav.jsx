@@ -52,12 +52,12 @@ const Nav = () => {
         >
           <ul className="flex flex-col gap-5 cursor-pointer font-semibold px-4 pt-10 bg-white h-full">
             {listItems.map((item) => (
-              <>
+              <div key={item.label}>
                 <li onClick={closeMenu} key={item.href}>
                   <Link href={item.href}>{item.label}</Link>
                 </li>
                 <Separator />
-              </>
+              </div>
             ))}
             <Button>Contact Us</Button>
           </ul>
